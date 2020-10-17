@@ -1,0 +1,13 @@
+
+.tech-single-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+    width: 180px;
+    padding: 16px;
+}
+.tech-single-box>img {
+    height: 5rem;
+}

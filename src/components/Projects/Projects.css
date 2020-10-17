@@ -1,0 +1,56 @@
+.project-box {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar; 
+}
+.project-card {
+    display: flex;
+    flex-direction: column;
+    width: 19rem;
+    height: 22rem;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,.2), 0 0 50px 0 rgba(0,0,0,.09);
+    margin: 1rem 1rem;
+    box-sizing: border-box;
+    transition: box-shadow .2s ease-out;
+}
+.project-card:hover {
+    box-shadow: 0 0 24px 0 rgba(0,0,0,.2), 0 0 50px 0 rgba(0,0,0,.09);
+}
+.proj-img-box {
+    flex: 1;
+}
+.proj-img {
+    width: 100%;
+}
+.proj-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 0 0.5rem;
+    font-family: 'Nunito', sans-serif;
+    flex: 1;
+}
+.tech-icons-box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.proj-tech-icons-box {
+    display: flex;
+    justify-content: flex-start;
+    width: inherit;
+}
+.proj-right-tech-icons {
+    height: 1rem;
+    margin-right: 0.5rem;
+}
+.proj-header-name {
+    font-weight: bold;
+    font-weight: 1.1rem;
+}
+.proj-header-desc {
+    font-size: 0.8rem;
+}

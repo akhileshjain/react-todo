@@ -1,0 +1,29 @@
+.project-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #2b2c34;
+}
+.section-header {
+    width: 100%;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    /* margin: 0.5rem 0 0 0; */
+    font-size: 2rem;
+    padding: 1.5rem 0;
+    font-weight: bold;
+    animation: letters 1s ease-in;
+}
+@keyframes letters {
+    from {letter-spacing: 6rem;}
+    to {letter-spacing: 0.1rem;}
+}
+.technologies-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 0;
+    background: antiquewhite;
+}
