@@ -52,6 +52,6 @@
         visibility: hidden;
     }
     .header-dropdown-section {
-        visibility: visible;
+        /* visibility: visible; */
     }
 }

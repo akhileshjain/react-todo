@@ -5,7 +5,36 @@ import About from '../About/About';
 import Technologies from '../Technologies/Technologies';
 import Project from '../Projects/Projects';
 import MyForm from '../Contact-Form/Contact-Form';
+import {Route, Router} from 'react-router-dom';
+import { createBrowserHistory } from 'history';
 
+const browserHistory = createBrowserHistory();
+
+browserHistory.listen(location => {
+    const { hash } = location;
+    if (hash !== '') {
+        // Push onto callback queue so it runs after the DOM is updated,
+        // this is required when navigating from a different page so that
+        // the element is rendered on the page before trying to getElementById.
+        setTimeout(
+             () => {
+                const id = hash.replace('#', '');
+                const headerOffset = 15;
+                const element = document.getElementById(id);
+                const elementPosition = element.getBoundingClientRect().top;
+                const offsetPosition = elementPosition - headerOffset;
+                if (element) {
+                  // debugger;
+                    window.scrollTo({
+                      top: offsetPosition,
+                      behavior: 'smooth'
+                    });
+                }
+            },
+            0
+        );
+    }
+});
 class App extends Component {
     state = { 
       skills: [{"id": "html.png", "name": "HTML5"},
@@ -69,13 +98,15 @@ class App extends Component {
         })}
       </div>);
       return(
-        <div className="App">
-            <Head></Head>
-            <About></About>
-            {projects}
-            {skills}
-            <MyForm></MyForm>
+        <Router history={browserHistory}>
+        <div className="App">        
+            <Head ></Head>
+            <div id="about"><About></About></div>
+            <div id="projects">{projects}</div>
+            <div id="skills">{skills}</div>
+            <div id="contact"><Route exact component={MyForm}></Route></div>
           </div>
+        </Router>
       )
     }
 
