@@ -19,9 +19,9 @@
 .contact-form {
     display: flex;
     flex-direction: column;
-    padding: 2.5rem;
+    padding: 1.5rem;
     background: white;
-    width: 16rem;
+    width: 15rem;
     height: 17rem;
     align-items: flex-start;
     border: 3px solid #2b2c34;

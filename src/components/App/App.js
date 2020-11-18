@@ -19,20 +19,22 @@ browserHistory.listen(location => {
         setTimeout(
              () => {
                 const id = hash.replace('#', '');
-                const headerOffset = 15;
+                const headerOffset = document.getElementsByClassName('head-main-section')[0].offsetHeight;
                 const element = document.getElementById(id);
-                const elementPosition = element.getBoundingClientRect().top;
+                const elementPosition = element.offsetTop;
                 const offsetPosition = elementPosition - headerOffset;
                 if (element) {
-                  // debugger;
-                    window.scrollTo({
-                      top: offsetPosition,
-                      behavior: 'smooth'
-                    });
+                  window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                  });
+                  // element.scrollIntoView();
                 }
-            },
-            0
-        );
+            },0);
+            if(window.innerWidth < 600) {
+              document.getElementsByClassName('container')[0].classList.toggle("change");
+              document.getElementsByClassName('header-dropdown-section')[0].classList.toggle("dropdown-visible");     
+            }
     }
 });
 class App extends Component {
