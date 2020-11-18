@@ -10,10 +10,10 @@ const about = () => {
             <div className="info-desc-section">
                 <div className="hi-text">Hi, I'm </div>
                 <Typewriter options={{
-                    strings: [' Akhilesh Jain', ' a software developer', ' a learner', 'an avid quizzer'],
+                    strings: [' Akhilesh Jain', ' a software developer', ' a learner', ' an avid quizzer'],
                     autoStart: true,
                     loop: true,
-                    skipAddStyles: true,
+                    skipAddStyles: false,
                     deleteSpeed: 50,
                     delay: 80
                 }}

@@ -6,16 +6,18 @@
 }
 .img-box {
     width: 8rem;
-    height: 11rem;
+    flex:1;
+    /* height: 11rem; */
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     /* z-index: 10; */
-    margin: -0.1rem 0 0 -0.2rem;
+    /* margin: -0.1rem 0 0 -0.2rem; */
     /* border-radius: 8px; */
-    box-shadow: inset 1px 1px #000;
-    background-color: #4158D0;   /*#6246ea*/
+    /* box-shadow: inset 1px 1px #000; */
+    /* background-color: #4158D0;   */
+     /* #6246ea */
     /* background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);    */
 }
 .portfolio-img {
@@ -88,4 +90,21 @@
 }
 .sm-img:hover {
     transform: scale(1.25);
+}
+@media(max-width:600px) {
+    .sm-card-box {
+        max-width: 22rem;
+    }
+}
+@media(max-width:240px) {
+    .portfolio-img{
+        width: 48px;
+        height: 48px;
+    }
+    .insta-link {
+        font-size: 0.6rem;
+    }
+    .desc-box {
+        font-size: 0.6rem;
+    }
 }

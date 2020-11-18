@@ -17,8 +17,8 @@
     font-weight: bold;
     flex: 1;
 }
-.hi-text {
-    padding-right: 0.5rem;
+.Typewriter {
+    padding-left: 0.4rem;
 }
 @media(max-width: 650px) {
     .about-section  {
@@ -32,5 +32,12 @@
         flex: none;
         font-size: 1.4rem;
         margin-top: 20px;
+    }
+}
+@media(max-width: 240px) {
+    .info-desc-section {
+        flex: none;
+        font-size: 1rem;
+        margin-top: 5px;
     }
 }

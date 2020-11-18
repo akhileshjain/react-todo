@@ -86,3 +86,9 @@
     flex: 1;
     margin-left: 0.5em;
 }
+
+@media(max-width: 240px) {
+    .contact-form {
+        width: 10rem;
+    }
+}
