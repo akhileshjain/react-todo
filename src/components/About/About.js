@@ -6,7 +6,7 @@ const about = () => {
     
     return(   
         <div className="about-section">
-            <div className="about-me-img-box"><img src={require('../../assets/me.svg')}/></div>
+            <div className="about-me-img-box"><img alt="My Avatar" src={require('../../assets/me.svg')}/></div>
             <div className="info-desc-section">
                 <div className="hi-text">Hi, I'm </div>
                 <Typewriter options={{

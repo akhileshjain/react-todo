@@ -17,8 +17,11 @@ export default class MyForm extends React.Component {
   render() {
     const { status } = this.state;
     return (
-        <div class="contact-parent-box">
-            <div className="section-header">Contact</div>
+        <div className="contact-parent-box">
+            <div className="section-header">
+               <div className="section-header-title">Contact</div>
+               <img alt="Contact me" className="section-header-icon" src={require('../../assets/contact.png')}></img>
+            </div>
             <div className="social-parent-box">
                 <SocialCard></SocialCard>
                 <div className="separator">  or simply  </div>

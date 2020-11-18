@@ -1,17 +1,20 @@
 .contact-parent-box {
-    background: saddlebrown;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-bottom: 3rem;
+    /* height: 100vh; */
 }
 .social-parent-box {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
     justify-content: space-around;
 
+}
+.social-parent-box>div {
+    margin-bottom: 2rem;
 }
 .contact-form {
     display: flex;
@@ -21,7 +24,7 @@
     width: 16rem;
     height: 17rem;
     align-items: flex-start;
-    border: 1px solid black;
+    border: 3px solid #2b2c34;
     border-radius: 4px;
 }
 .contact-form-input {
@@ -32,6 +35,10 @@
     color: rgba(74,85,104,1);
     border: 1px solid #e2e8f0;
     line-height: 1.5;
+}
+.contact-form-input:focus {
+    box-shadow: 0 0 0 3px rgba(66,153,225,.5);
+    outline: 0;
 }
 .contact-form-fields-box {
     display: flex;
@@ -62,20 +69,20 @@
  align-items: center;
  justify-content: space-between;
  font-family: 'Nunito', sans-serif; 
- font-size: 1.1rem;
+ font-size: 1rem;
 }
 .separator::before {
     content: "";
-    border-bottom: 1px solid #000;
+    border-bottom: 3px solid #2b2c34;
     display: flex;
-    width: calc(100vw - 7.5rem);
+    width: calc(100vw - 8rem);
     flex: 1;
-    margin-right: 0.25em;
+    margin-right: 0.5em;
 }
 .separator::after {
     content: "";
-    border-bottom: 1px solid #000;
+    border-bottom: 3px solid #2b2c34;
     display: flex;
     flex: 1;
-    margin-top: 0.25em;
+    margin-left: 0.5em;
 }

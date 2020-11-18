@@ -41,7 +41,11 @@ class App extends Component {
 
       render() {
        let projects = (<div id="project" className="project-section">
-         <div className="section-header">Projects</div>
+         <div className="section-header">
+           <div className="section-header-title" >Projects</div>
+           <img alt="Projects" src={require('../../assets/project.png')} className="section-header-icon"/>
+         </div>
+
          {this.state.projects.map(project => {
            return <Project 
                     name={project.name} 
@@ -55,7 +59,10 @@ class App extends Component {
        </div>) 
 
       let skills = (<div className="technologies-box">
-        <div className="section-header">Skills</div>
+         <div className="section-header">
+           <div className="section-header-title" >Skills</div>
+           <img alt="Skills" src={require('../../assets/skill.png')} className="section-header-icon"/>
+         </div>
         {this.state.skills.map(skill => {
           return <Technologies skillImg={skill.id}
                   skillName={skill.name}></Technologies>

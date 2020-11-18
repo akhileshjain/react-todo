@@ -21,13 +21,13 @@ const projects = (props) => {
     else if(props.source && !props.source.url) {
         sourceCode= (<div>
             {<a href ={props.source.url} target='_blank' rel="noopener noreferrer">
-             <img title="Closed Source" className="proj-right-tech-icons" src={require(`../../assets/${props.source.id}`)}/>
+             <img alt="Closed Source Project" title="Closed Source" className="proj-right-tech-icons" src={require(`../../assets/${props.source.id}`)}/>
              </a>}
         </div>)
     }
     return (
             <div className="project-card">
-                <div className="proj-img-box"><img className="proj-img" src={require(`../../assets/${props.photo}`)}/></div>
+                <div className="proj-img-box"><img alt="Project screenshot" className="proj-img" src={require(`../../assets/${props.photo}`)}/></div>
                 <div className="proj-details">
                     <div className="proj-header-name">{props.name}</div>
                     <div className="proj-header-desc">{props.desc}</div>
