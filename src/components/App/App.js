@@ -3,6 +3,7 @@ import './App.css';
 import Head from '../Head/Head';
 import About from '../About/About';
 import Technologies from '../Technologies/Technologies';
+import Experience from '../Experience/Experience';
 import Project from '../Projects/Projects';
 import MyForm from '../Contact-Form/Contact-Form';
 import {Route, Router} from 'react-router-dom';
@@ -55,19 +56,19 @@ class App extends Component {
                   "url": "https://vlm.cfapps.eu10.hana.ondemand.com/index.html#/home",
                   "source": {"id":"closed.png"},
                   "tech": [{"id": "angular.png", "name": "Angular"}, {"id":"node-js.png", "name": "Nodejs"}, {"id":"sap.png", "name": "SAP HANA"}, {"id":"git.png", "name": "Git"} ]},
-                 {"name": "COVID-19 Dashboard", 
-                 "desc": 'This Dashboard shows latest COVID-19 cases in India and the world.', 
-                 "photo": 'covid.PNG',
-                 "source": {"id":"github.png", "url": "https://github.com/akhileshjain/covid-dashboard"},
-                 "url": "https://covid-19-tracer.netlify.app/",
-                 "tech": [{"id":"git.png", "name": "Git"}, {"id": "angular.png", "name": "Angular"}, {"id":"bootstrap-4.png", "name": "Bootstrap-4"}]},
                  {"name": "SAP Innovation Discovery",
                   "desc": "A self-service tool hosted on SAP Service Marketplace to help customers find out about the latest innovations coming out of SAP Portfolio.",
                   "photo": "innovation-discovery.jpg",
                   "source": {"id": "closed.png", "url": ""},
                   "url":"https://go.support.sap.com/innovationdiscovery/",
-                  "tech":[{"id":"sapui5.jpg", "name": "SAPUI5"}, {"id": "sap.png", "name": "SAP ABAP"}]}
-                  ]};
+                  "tech":[{"id":"sapui5.jpg", "name": "SAPUI5"}, {"id": "sap.png", "name": "SAP ABAP"}]},
+                  {"name": "COVID-19 Dashboard", 
+                  "desc": 'This Dashboard shows latest COVID-19 cases in India and the world.', 
+                  "photo": 'covid.jpg',
+                  "source": {"id":"github.png", "url": "https://github.com/akhileshjain/covid-dashboard"},
+                  "url": "https://covid-19-tracer.netlify.app/",
+                  "tech": [{"id":"git.png", "name": "Git"}, {"id": "angular.png", "name": "Angular"}, {"id":"bootstrap-4.png", "name": "Bootstrap-4"}]} 
+                ]};
 
 
       render() {
@@ -105,6 +106,13 @@ class App extends Component {
             <Head ></Head>
             <div id="about"><About></About></div>
             <div id="projects">{projects}</div>
+            <div id="experience">
+            <div className="section-header">
+            <div className="section-header-title" >Experience</div>
+              <img alt="Experience" src={require('../../assets/experience.png')} className="section-header-icon"/>
+            </div>
+            <Experience></Experience>
+        </div>
             <div id="skills">{skills}</div>
             <div id="contact"><Route exact component={MyForm}></Route></div>
           </div>

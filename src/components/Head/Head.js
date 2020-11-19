@@ -12,14 +12,14 @@ const head = () => {
             <div className="head-links-section">
                 <a className="header-links" href="/#about">About Me</a>
                 <a className="header-links" href="/#projects">Projects</a>
-                {/* <a className="header-links" href="/#experience">Experience</a> */}
+                <a className="header-links" href="/#experience">Experience</a>
                 <a className="header-links" href="/#skills">Skills</a>
                 <a className="header-links" href="/#contact">Contact</a>
             </div>
             <div className="header-dropdown-section">
                 <a className="header-dropdown-links" href="/#about">About Me</a>
                 <a className="header-dropdown-links" href="/#projects">Projects</a>
-                {/* <a className="header-dropdown-links" href="/#experience">Experience</a> */}
+                <a className="header-dropdown-links" href="/#experience">Experience</a>
                 <a className="header-dropdown-links" href="/#skills">Skills</a>
                 <a className="header-dropdown-links" href="/#contact">Contact</a>
             </div>

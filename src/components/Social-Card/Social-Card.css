@@ -36,6 +36,7 @@
     /* z-index: 5; */
     position: relative;
     border: 3px solid #2b2c34;
+    background-color: white;
     width: calc(100vw - 25px);
     max-width: 25rem;
     box-shadow: 3px 2px #000;

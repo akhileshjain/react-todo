@@ -12,6 +12,7 @@
     height: 22rem;
     box-shadow: 0 0 8px 0 rgba(0,0,0,.2), 0 0 50px 0 rgba(0,0,0,.09);
     margin: 1rem 1rem;
+    border-radius: 4px;
     box-sizing: border-box;
     transition: box-shadow .2s ease-out;
 }
@@ -23,6 +24,8 @@
 }
 .proj-img {
     width: 100%;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
 }
 .proj-details {
     display: flex;
@@ -44,7 +47,7 @@
     width: inherit;
 }
 .proj-right-tech-icons {
-    height: 1rem;
+    height: 1.5rem;
     margin-right: 0.5rem;
 }
 .proj-header-name {

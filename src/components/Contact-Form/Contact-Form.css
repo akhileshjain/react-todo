@@ -3,8 +3,8 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-bottom: 3rem;
-    /* height: 100vh; */
+    padding-bottom: 5rem;
+    height: 100vh;
 }
 .social-parent-box {
     display: flex;
@@ -19,10 +19,9 @@
 .contact-form {
     display: flex;
     flex-direction: column;
-    padding: 1.5rem;
+    padding: 2.5rem 1.5rem;
     background: white;
     width: 15rem;
-    height: 17rem;
     align-items: flex-start;
     border: 3px solid #2b2c34;
     border-radius: 4px;
