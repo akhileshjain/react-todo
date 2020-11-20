@@ -25,7 +25,7 @@ const head = () => {
             </div>
             <div className="container" onClick={menuBtnHandler}>
                 <div className="bar1"></div>
-                <div className="bar2"></div>
+                {/* <div className="bar2"></div> */}
                 <div className="bar3"></div>
             </div>
         </div>

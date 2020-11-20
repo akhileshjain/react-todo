@@ -11,6 +11,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-top: 3rem;
     /* background:  #fffffe; */
 }
 .about-me-img-box {
@@ -20,7 +21,8 @@
 .info-desc-section {
     display: flex;
     flex-direction: row;
-    color:#6246ea;
+    color: black;
+    /* color:#6246ea; */
     font-size: 2.1rem;
     font-weight: bold;
     flex: 1;
@@ -39,6 +41,11 @@
     font-weight: bold;
     cursor: pointer;
 }
+@media (orientation: landscape) {
+    .my-avatar {
+        transform: scale(0.75);
+    }
+}
 @media(max-width: 650px) {
     .about-section  {
         flex-direction: column;
@@ -51,6 +58,11 @@
         flex: none;
         font-size: 1.4rem;
         margin-top: 20px;
+    }
+}
+@media(max-width: 768px) {
+    .info-desc-section {
+        font-size: 1.6rem;
     }
 }
 @media(max-width: 240px) {

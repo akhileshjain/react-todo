@@ -43,7 +43,7 @@ export default class MyForm extends React.Component {
                             <textarea className="contact-form-input" placeholder="Your message" name="message" />
                         </div>
                         <div className="contact-form-submit-btn-box">
-                            {status === "SUCCESS" ? <p>Thanks for contacting. I'll get back to you!</p> : <button className="contact-form-submit-btn">Send</button>}
+                            {status === "SUCCESS" ? <p>Thanks for contacting. I'll get back to you!</p> : <button className="contact-form-submit-btn">SEND</button>}
                             {status === "ERROR" && <p>Oops! There was an error.</p>}
                         </div>
                     </div>
