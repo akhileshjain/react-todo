@@ -43,12 +43,13 @@
     flex-direction: column;
     flex: 1;
     width: 100%;
+    padding-bottom: 1rem;
+
 }
 .contact-form-labels {
     font-size: 0.8rem;
     font-weight: bold;
     font-family: 'Nunito', sans-serif;
-    padding-bottom: 0.5rem;
 }
 .contact-form-submit-btn-box {
     display: flex;
