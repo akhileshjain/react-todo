@@ -12,21 +12,27 @@ const projects = (props) => {
             })}
         </div>);
     }
+
+
     let sourceCode = null;
-    if(props.source && props.source.url) {
-     sourceCode = (<div>
-       {<img className="proj-right-tech-icons" alt="Github Repo" title="Github" 
-       src={require(`../../assets/${props.source.id}`)}/>}
-        </div>)} 
-    else if(props.source && !props.source.url) {
-        sourceCode= (<div>
-            {<a href ={props.source.url} target='_blank' rel="noopener noreferrer">
-             <img alt="Closed Source Project" title="Closed Source" className="proj-right-tech-icons" src={require(`../../assets/${props.source.id}`)}/>
+    if(!props.source.url) {
+        sourceCode = (<div className="repo-icons">
+        {<img className="proj-right-tech-icons" alt="Closed Source Project" title="Closed Source"
+        src={require(`../../assets/${props.source.id}`)}/>}
+            </div>)} 
+    else if(props.source.url) {
+        sourceCode= (<div className="repo-icons">
+            {<a href ={props.source.url} target='_blank' rel="noopener noreferrer" onClick ="return false;">
+             <img alt="Github Repo" title="Github" className="proj-right-tech-icons" src={require(`../../assets/${props.source.id}`)}/>
              </a>}
         </div>)
     }
+    
+   const projectClickedHandler = (url) => {
+        window.open(url);
+    }
     return (
-            <div className="project-card">
+            <div className="project-card" onClick={() => projectClickedHandler( props.url)}>
                 <div className="proj-img-box"><img alt="Project screenshot" className="proj-img" src={require(`../../assets/${props.photo}`)}/></div>
                 <div className="proj-details">
                     <div className="proj-header-name">{props.name}</div>

@@ -59,7 +59,7 @@ class App extends Component {
                  {"name": "SAP Innovation Discovery",
                   "desc": "A self-service tool hosted on SAP Service Marketplace to help customers find out about the latest innovations coming out of SAP Portfolio.",
                   "photo": "innovation-discovery.jpg",
-                  "source": {"id": "closed.png", "url": ""},
+                  "source": {"id": "closed.png"},
                   "url":"https://go.support.sap.com/innovationdiscovery/",
                   "tech":[{"id":"sapui5.jpg", "name": "SAPUI5"}, {"id": "sap.png", "name": "SAP ABAP"}]},
                   {"name": "COVID-19 Dashboard", 
