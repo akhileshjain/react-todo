@@ -38,7 +38,7 @@
     position: absolute;
     z-index: 1000;
     flex:1;
-    height: calc(100vh - 6rem);
+    height: 100vh;
     left: 0;
     right: 0;
     top: 3rem;
