@@ -7,7 +7,7 @@ const card = () => {
         <div className="parent">
         <div className="sm-card-box">
         <div className="img-box">
-            <img className="portfolio-img" alt="Akhilesh Jain" src={require('../../assets/akhilesh.jpg')}/>
+            <img className="portfolio-img" width="72px" height="72px"alt="Akhilesh Jain" src={require('../../assets/akhilesh.jpg')}/>
         </div>
         <div className="right-box">
             <div className="info-box">
@@ -16,7 +16,7 @@ const card = () => {
                     <div className="insta-link">@akhilrjain</div>
                 </div>
                 <div className="desc-box">
-                    <div>Software Developer@SAP</div>
+                    <div>Software Developer-SAP</div>
                     <div>Freelancer</div>
                 </div>
                 <div></div>

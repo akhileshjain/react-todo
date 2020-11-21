@@ -19,7 +19,7 @@ html {
     font-size: 2rem;
     padding: 3rem 0;
     font-weight: bold;
-    animation: letters 1s ease-in;
+    /* animation: letters 1s ease-in; */
 }
 #about {
     background-color: rgb(227, 227, 227);
@@ -36,10 +36,10 @@ html {
     margin-left: 10px;
     /* height: 30px; */
 }
-@keyframes letters {
+/* @keyframes letters {
     from {letter-spacing: 6rem;}
     to {letter-spacing: 0.1rem;}
-}
+} */
 .technologies-box{
     display: flex;
     flex-wrap: wrap;

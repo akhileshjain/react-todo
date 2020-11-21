@@ -31,16 +31,16 @@ export default class MyForm extends React.Component {
                     method="POST">
                     <div className="contact-form">    
                         <div className="contact-form-fields-box">
-                            <label className="contact-form-labels">Name:</label>
-                            <input className="contact-form-input" placeholder="Your Name" type="text" name="name" />
+                            <label for="contact-name" className="contact-form-labels">Name:</label>
+                            <input id="contact-name" className="contact-form-input" placeholder="Your Name" type="text" name="name" />
                         </div>                
                         <div className="contact-form-fields-box">
-                            <label className="contact-form-labels">Email:</label>
-                            <input className="contact-form-input" placeholder="Your e-mail" type="email" name="email" />
+                            <label for="contact-email" className="contact-form-labels">Email:</label>
+                            <input id="contact-email" className="contact-form-input" placeholder="Your e-mail" type="email" name="email" />
                         </div>
                         <div className="contact-form-fields-box">
-                            <label className="contact-form-labels">Message:</label>
-                            <textarea className="contact-form-input" placeholder="Your message" name="message" />
+                            <label for="contact-msg" className="contact-form-labels">Message:</label>
+                            <textarea id="contact-msg" className="contact-form-input" placeholder="Your message" name="message" />
                         </div>
                         <div className="contact-form-submit-btn-box">
                             {status === "SUCCESS" ? <p>Thanks for contacting. I'll get back to you!</p> : <button className="contact-form-submit-btn">SEND</button>}
