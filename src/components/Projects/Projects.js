@@ -33,7 +33,8 @@ const projects = (props) => {
     }
     return (
             <div className="project-card" onClick={() => projectClickedHandler( props.url)}>
-                <div className="proj-img-box"><img alt="Project screenshot" className="proj-img" src={require(`../../assets/${props.photo}`)}/></div>
+                <div className="proj-img-box"><img alt="Project screenshot" width="100%" height="100%" 
+                className="proj-img" src={require(`../../assets/${props.photo}`)}/></div>
                 <div className="proj-details">
                     <div className="proj-header-name">{props.name}</div>
                     <div className="proj-header-desc">{props.desc}</div>
