@@ -88,7 +88,7 @@ const experience = () => {
     contentStyle={{ background: '#6246ea', color: '#fff' }}
     contentArrowStyle={{ borderRight: '7px solid  #6246ea' }}
     iconStyle={{ background: '#6246ea', color: '#fff' }}
-    // icon={require('../../assets/education.png')}
+    // icon={<img width="30" height="30" src ={require('../../assets/education.png')}/>}
   >
     <h3 className="vertical-timeline-element-title">Bachelor of Technology</h3>
     <h4 className="vertical-timeline-element-subtitle">GNDU, Amritsar</h4>
