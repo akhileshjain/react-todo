@@ -22,7 +22,7 @@ const about = () => {
                 </div>
             </div> 
             <div className="resume-section">
-                <a href={require('../../assets/Resume.pdf')} target='_blank' rel="noopener noreferrer">
+                <a href={require('../../assets/Resume-1.pdf')} target='_blank' rel="noopener noreferrer">
                     <button className="resume-button">RESUME</button>
                 </a>
             </div>
