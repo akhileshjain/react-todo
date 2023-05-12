@@ -16,7 +16,7 @@ const card = () => {
                     <div className="insta-link">@akhilrjain</div>
                 </div>
                 <div className="desc-box">
-                    <div>Software Developer-SAP</div>
+                    <div>Senior Analyst - PepsiCo Inc.</div>
                     <div>Freelancer</div>
                 </div>
                 <div></div>

@@ -11,9 +11,22 @@ const experience = () => {
     contentStyle={{ background: '#6246ea', color: '#fff' }}
     contentArrowStyle={{ borderRight: '7px solid  #6246ea' }}
     dateClassName="dates"
-    date="2018 - present"
+    date="2023 - present"
     iconStyle={{ background: '#6246ea', color: '#fff' }}
-    // icon={<WorkIcon />}
+  >
+    <h3 className="vertical-timeline-element-title">Senior Analyst - PepsiCo</h3>
+    <h4 className="vertical-timeline-element-subtitle">Gurgaon, IN</h4>
+    <p>
+      Working on PepsiConnect B2B Mobile App 
+    </p>
+  </VerticalTimelineElement>
+  <VerticalTimelineElement
+    className="vertical-timeline-element--work"
+    contentStyle={{ background: '#6246ea', color: '#fff' }}
+    contentArrowStyle={{ borderRight: '7px solid  #6246ea' }}
+    dateClassName="dates"
+    date="2018 - 2023"
+    iconStyle={{ background: '#6246ea', color: '#fff' }}
   >
     <h3 className="vertical-timeline-element-title">Software Developer - SAP</h3>
     <h4 className="vertical-timeline-element-subtitle">Gurgaon, IN</h4>
